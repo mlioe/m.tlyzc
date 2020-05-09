@@ -1,0 +1,52 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="header">
+            <view class="headerTop">感谢您对美团外卖的信任，期待再次光临。</view>
+            <view class="headerCenter">
+                <view class="headerInp">再来一单</view>
+            </view>
+            <view class="headerBottom" bindtap="makePhoneCall" data-e-tap-so="this">
+                <view class="headerPhoneBox">
+                    <at-icon compid="{{$compid__20}}"></at-icon>
+                </view>
+                <view class="headerText">联系商家</view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="contentName">
+                <view>益禾堂</view>
+                <view>合计：<text style="color:red">￥60</text>
+                </view>
+            </view>
+            <view class="tabList" wx:key="name" wx:for="{{tabList}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                <view class="tabListImgbox"></view>
+                <view class="tabListRight">
+                    <view class="listTitle">
+                        <view>益禾堂</view>
+                        <view class="listTitleMoney">￥60</view>
+                    </view>
+                    <view class="listText">主料12：纯正的龙头燕盏；（美肤美肌、优孕滋补、补充胶原蛋白、润肺、增强抵抗力）</view>
+                </view>
+            </view>
+        </view>
+        <view class="other">
+            <view class="otherTitle">配送信息</view>
+            <view class="otherList">
+                <view class="otherListTitle">订单编号</view>
+                <view class="otherListText">2952 5461 5831 6210 1</view>
+            </view>
+            <view class="otherList">
+                <view class="otherListTitle">送餐时间</view>
+                <view class="otherListText">立即配送</view>
+            </view>
+            <view class="otherList">
+                <view class="otherListTitle">送餐时间</view>
+                <view class="otherListText">李(先生) 13790989809 菉塘卜园村新区198号楼</view>
+            </view>
+            <view class="otherList">
+                <view class="otherListTitle">下单时间</view>
+                <view class="otherListText">2019-11-10 18：00</view>
+            </view>
+        </view>
+    </view>
+</block>

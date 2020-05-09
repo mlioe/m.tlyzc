@@ -1,0 +1,105 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="header">
+            <view class="headerImg"></view>
+            <view class="headerText">
+                <view>
+                    <view class="time">购买成功后我们的工作人员会联系你配货上门</view>
+                    <view class="notice">公告</view>
+                </view>
+                <view class="follow">关注</view>
+            </view>
+        </view>
+        <view class="content">
+            <scroll-view class="contentLeft" scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-into-view="{{labelId}}">
+                <view id="{{'T' + index}}" class="{{current === index ? 'list activer' : 'list'}}" bindtap="current" wx:key="title" wx:for="{{arrayListTitle}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{index}}">{{item.title}}</view>
+            </scroll-view>
+            <view class="contentRight">
+                <scroll-view class="scrollViews" scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-into-view="{{currId}}" bindscroll="onScroll" data-e-scroll-so="this">
+                    <view class="listBox" id="{{'T' + index}}" wx:key="$original.title" bindtap="details" wx:for="{{loopArray1}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this">
+                        <view class="listTitle">{{item.$original.title}}{{index}}</view>
+                        <view wx:key="$original.name" wx:for="{{item.$anonymousCallee__0}}" wx:for-item="item2" wx:for-index="index2">
+                            <view class="list">
+                                <view class="listContentImgBox">
+                                    <image class="img" src="{{item2.$loopState__temp2}}" mode="aspectFill"></image>
+                                    <view class="mask" style="{{item2.$loopState__temp4}}">
+                                        <view>暂停</view>
+                                        <view>出售</view>
+                                    </view>
+                                </view>
+                                <view class="lsitContent">
+                                    <view class="listContentTop">
+                                        <view class="name">{{item2.$original.name}}</view>
+                                    </view>
+                                    <view class="listContentMiddle">月售{{item2.$original.sold}}</view>
+                                    <view class="listContentBottom">
+                                        <view class="money">￥{{item2.$original.money}}</view>
+                                        <view class="addBox">
+                                            <view class="del" style="{{item2.$loopState__temp6}}" catchtap="delshow" data-e-tap-so="this" data-e-tap-a-a="{{item2.$original}}" data-e-tap-a-b="{{index}}" data-e-tap-a-c="{{index2}}">
+                                                <at-icon compid="{{item2.$compid__0}}"></at-icon>
+                                            </view>
+                                            <view class="addNum" style="{{item2.$loopState__temp8}}">{{item2.$original.num}}</view>
+                                            <view class="add" catchtap="addshow" data-e-tap-so="this" data-e-tap-a-a="{{item2.$original}}" data-e-tap-a-b="{{index}}" data-e-tap-a-c="{{index2}}">
+                                                <at-icon compid="{{item2.$compid__1}}"></at-icon>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="footer">
+            <view class="footerBox">
+                <view class="footerBoxLeft">
+                    <view class="showIconBox" bindtap="editMaskType">
+                        <view class="showIcon">
+                            <at-icon compid="{{$compid__4}}"></at-icon>
+                            <view class="showNum" style="{{anonymousState__temp9}}">{{showList.length}}</view>
+                        </view>
+                    </view>
+                    <view class="totalMoney">￥{{total}}</view>
+                </view>
+                <view class="footerBoxRight" bindtap="goSubOrder">去结算</view>
+            </view>
+        </view>
+        <view class="detailsMask" style="{{anonymousState__temp10}}" bindtap="anonymousFunc0">
+            <view class="contentBox">
+                <view class="tiltle">标题</view>
+                <image class="img" src="{{anonymousState__temp11}}" mode="aspectFill"></image>
+                <view class="introduction">卡仕达看见爱上的尽快哈数据库的哈就开始打卡华盛顿科技has就肯定会科技阿阿斯顿很快就阿哈萨克觉得哈卡几哈山东矿机卡仕达看见爱上的尽快哈数据库的哈就开始打卡华盛顿科技has就肯定会科技阿阿斯顿很快就阿哈萨克觉得哈卡几哈山东矿机</view>
+                <view class="money">￥50</view>
+            </view>
+        </view>
+        <view class="mask" style="{{anonymousState__temp12}}" bindtap="anonymousFunc1"></view>
+        <view class="shopCartBox" style="{{anonymousState__temp13}}">
+            <view class="shopCotent">
+                <view class="shopTop">
+                    <view>已选产品</view>
+                    <view class="deleCartList" bindtap="empty">
+                        <view class="IconBox">
+                            <at-icon compid="{{$compid__5}}"></at-icon>
+                        </view>清空购物车</view>
+                </view>
+                <view class="showListbox">
+                    <view class="showList" wx:key="$original.id" wx:for="{{loopArray2}}" wx:for-item="item" wx:for-index="index">
+                        <view class="showListImg"></view>
+                        <view class="showText">
+                            <view class="showName">{{item.$original.name}}</view>
+                            <view class="showOther">
+                                <view class="showMoney">￥{{item.$original.money}}</view>
+                                <view class="showEdit">
+                                    <at-icon compid="{{item.$compid__2}}"></at-icon>
+                                    <view class="showNum">{{item.$original.num}}</view>
+                                    <at-icon compid="{{item.$compid__3}}"></at-icon>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,26 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="myBox">
+        <view class="header">
+            <view class="headerImg">
+                <image src="{{imgUrl}}" class="img"></image>
+            </view>
+            <view class="headerLogin" bindtap="login" style="{{anonymousState__temp}}">登录/注册</view>
+            <view class="headerName" style="{{anonymousState__temp2}}">{{name === null ? '暂未填写昵称' : name}}</view>
+        </view>
+        <view class="list">
+            <view class="listBox" bindtap="addressList">
+                <image src="{{anonymousState__temp3}}" class="img"></image>
+                <view class="text">收货地址</view>
+            </view>
+            <view class="listBox" bindtap="shopPhone" data-e-tap-so="this">
+                <image src="{{anonymousState__temp4}}" class="img"></image>
+                <view class="text">商铺电话</view>
+            </view>
+            <view class="listBox" bindtap="editUser" data-e-tap-so="this">
+                <image src="{{anonymousState__temp5}}" class="img"></image>
+                <view class="text">我的资料</view>
+            </view>
+        </view>
+        <view class="quit" bindtap="quit" style="{{anonymousState__temp6}}">退出登录</view>
+    </view>
+</block>

@@ -1,0 +1,21 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="loginBox">
+        <view class="header">欢迎登陆黄月子家</view>
+        <view class="phoneInpBox">
+            <view class="inputBox">
+                <view class="inputBoxL">
+                    <view>+86</view>
+                    <at-icon compid="{{$compid__19}}"></at-icon>
+                </view>
+                <view class="inputBoxR">
+                    <input type="number" class="inputs" placeholder="请输入手机号" bindinput="phones" maxlength="{{11}}" data-e-input-so="this" />
+                </view>
+            </view>
+        </view>
+        <view class="tips">未注册的手机号验证后自动创建账号</view>
+        <view class="getcode" style="{{anonymousState__temp}}" bindtap="getCode" data-e-tap-so="this">获取短信验证码</view>
+        <button type="primary" loading="{{false}}" class="weChatButton" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            <image src="{{anonymousState__temp2}}" class="wechatIcon"></image>
+        </button>
+    </view>
+</block>

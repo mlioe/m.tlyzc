@@ -1,0 +1,20 @@
+@import "~taro-ui/dist/style/components/tabs.scss";
+
+@import "~taro-ui/dist/style/components/image-picker.scss";
+
+@import "~taro-ui/dist/style/components/icon.scss";
+.box{
+    .list{display: flex;align-items: center;justify-content: space-between;width: 95%;margin:  0 auto;border-bottom:1px solid #f4f5f6 ;
+        .listLeft{font-size: 32px;}
+        .listRightImg{display: flex;align-items: center;
+            .img{width: 120px;height: 120px;border-radius: 50%;background-color: #eee;margin: 20px;}
+            .inp{width: 50%;height: 90px;background-color: red;}
+        }
+        .listRight{display: flex;flex:2;flex-direction: row-reverse;align-items: center;
+            .inp{height: 90px;margin: 10px 20px;text-align: right;color:#a2a3a4;font-size: 32px;}
+            .text{height: 90px;margin: 10px 20px;text-align: right;color:#a2a3a4;font-size: 32px;line-height: 90px;}
+        }
+    }
+    .save{width: 100%;height: 100px;text-align: center;line-height: 100px;font-size: 30px;position: fixed;bottom: 0;left: 0;border-top:1px solid #f4f5f6;background-color: white;}
+    .f{width: 100%;word-break:break-all;}
+}

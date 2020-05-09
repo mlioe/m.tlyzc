@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index"
+  },
+  "navigationBarTitleText": "订单详情"
+}

@@ -1,0 +1,59 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="addressBox">
+            <view class="selectAdress" bindtap="anonymousFunc0" style="{{anonymousState__temp}}">
+                <at-icon compid="{{$compid__11}}"></at-icon>
+                <view class="selectText">选择收获地址</view>
+            </view>
+            <view class="adress" style="{{anonymousState__temp2}}" bindtap="anonymousFunc1">
+                <at-icon compid="{{$compid__12}}"></at-icon>
+                <view class="adressText">
+                    <view class="adressTextTitle">{{selectList.address}}</view>
+                    <view class="addressTextOtehr">{{selectList.name}} {{selectList.sex === 1 ? '先生' : '女士'}} {{selectList.phone}}</view>
+                </view>
+            </view>
+            <view class="tipTime">
+                <at-icon compid="{{$compid__13}}"></at-icon>
+                <view class="selectText">立即送出（大约14：35送达）</view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="contentName">益禾堂</view>
+            <view class="tabList" wx:key="name" wx:for="{{tabList}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                <view class="tabListImgbox"></view>
+                <view class="tabListRight">
+                    <view class="listTitle">益禾堂</view>
+                    <view class="listText">主料12：纯正的龙头燕盏；（美肤美肌、优孕滋补、补充胶原蛋白、润肺、增强抵抗力）</view>
+                    <view class="listOther">
+                        <view class="red">￥10</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="footer">
+            <view class="totalBox">合计 <text class="totalNum">￥300</text>
+            </view>
+            <view class="footerSub" bindtap="subOrder">提交订单</view>
+        </view>
+        <view class="mask" style="{{anonymousState__temp3}}" bindtap="anonymousFunc2"></view>
+        <view class="addressListBox" style="{{anonymousState__temp4}}">
+            <view class="addressListTitle">
+                <at-icon compid="{{$compid__14}}"></at-icon>
+                <view>收货地址</view>
+                <view></view>
+            </view>
+            <view class="addressList">
+                <view class="list" wx:key="$original.index" bindtap="anonymousFunc4" wx:for="{{loopArray4}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                    <view class="listLeft">
+                        <view class="listTitle">{{item.$original.address}}</view>
+                        <view class="listOther">{{item.$original.name}} {{item.$original.sex === 1 ? '先生' : '女士'}} {{item.$original.phone}}</view>
+                    </view>
+                    <view class="iconBox" catchtap="addAddress">
+                        <at-icon compid="{{item.$compid__10}}"></at-icon>
+                    </view>
+                </view>
+            </view>
+            <view class="newAddress" bindtap="newaddress" data-e-tap-so="this">新增收货地址</view>
+        </view>
+    </view>
+</block>

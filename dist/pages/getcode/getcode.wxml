@@ -1,0 +1,18 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="getcodeBox">
+        <view class="header">输入验证码</view>
+        <view class="tips">验证码已发送至 +86 {{phone}}</view>
+        <view class="inpbox">
+            <input class="Inp" type="number" value="{{code}}" bindinput="onInp" maxlength="{{6}}" bindblur="onBlur" focus="{{focus}}" data-e-input-so="this" data-e-blur-so="this" />
+            <view class="codeInputBox" bindtap="anonymousFunc0">
+                <view class="{{code.length == 0 ? 'codes codesActiver' : 'codes'}}">{{code[0]}}</view>
+                <view class="{{code.length == 1 ? 'codes codesActiver' : 'codes'}}">{{code[1]}}</view>
+                <view class="{{code.length == 2 ? 'codes codesActiver' : 'codes'}}">{{code[2]}}</view>
+                <view class="{{code.length == 3 ? 'codes codesActiver' : 'codes'}}">{{code[3]}}</view>
+                <view class="{{code.length == 4 ? 'codes codesActiver' : 'codes'}}">{{code[4]}}</view>
+                <view class="{{code.length == 5 ? 'codes codesActiver' : 'codes'}}">{{code[5]}}</view>
+            </view>
+        </view>
+        <view class="codenum" bindtap="anonymousFunc1">{{getCodeType ? '重新获取验证码' : codeNum + '后重新获取验证码'}}</view>
+    </view>
+</block>

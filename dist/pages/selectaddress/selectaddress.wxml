@@ -1,0 +1,38 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="header" style="{{anonymousState__temp}}">
+            <view class="headerAddress">
+                <at-icon compid="{{$compid__16}}"></at-icon>{{city}}</view>
+            <view class="inputBox">
+                <view class="Inp" bindtap="anonymousFunc0">请输入你的收货地址</view>
+            </view>
+        </view>
+        <view class="searcHeader" style="{{anonymousState__temp2}}">
+            <view class="headerAddress">
+                <at-icon compid="{{$compid__17}}"></at-icon>{{city}}</view>
+            <view class="inputBox">
+                <input class="Inp" type="text" placeholder="请输入你的收货地址" bindinput="onTabItemTap" data-e-input-so="this" />
+            </view>
+            <view class="down" bindtap="anonymousFunc1">取消</view>
+        </view>
+        <view class="mapBox" style="{{anonymousState__temp3}}">
+            <map class="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}"></map>
+        </view>
+        <view class="addressListBox" style="{{anonymousState__temp4}}">
+            <view class="list" wx:key="title" bindtap="tapList" wx:for="{{addressList}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item}}">
+                <view class="{{index === 0 ? 'listLeft activeBg ' : 'listLeft'}}"></view>
+                <view class="listright">
+                    <view class="{{index === 0 ? 'listTitle activeColor' : 'listTitle'}}">{{item.title}}</view>
+                    <view class="listAddress">{{item.address}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="mask" style="{{anonymousState__temp5}}"></view>
+        <view class="selectList" style="{{anonymousState__temp6}}">
+            <view class="list" wx:key="title" bindtap="tapList" wx:for="{{searchAddressList}}" wx:for-item="item" wx:for-index="_anonIdx2" data-e-tap-so="this" data-e-tap-a-a="{{item}}">
+                <view class="listTitle">{{item.title}}</view>
+                <view class="listAddress">{{item.address}}</view>
+            </view>
+        </view>
+    </view>
+</block>

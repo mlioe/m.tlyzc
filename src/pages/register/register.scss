@@ -1,0 +1,27 @@
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.box{
+    .header{width: 90%;height: 90px;margin:0 5%;
+        .headerLeft,.headerRight{width: 50%;height: 90px;float: left;line-height: 90px;text-align: center;font-size: 32px;border-bottom: 1px solid #f4f5f6;}
+    }
+    .phoneRegister{width: 100%;
+        .name{width: 90%;margin: 0 auto;border-bottom: 1px solid #f4f5f6;height: 90px;display: flex;align-items: center;
+            .Icon{width: 90px;height: 90px;display: block;text-align: center;line-height: 90px;}
+            .Inp{flex: 2;font-size: 32px;}
+        }
+        .phone{width: 90%;margin: 0 auto;border-bottom: 1px solid #f4f5f6;height: 90px;display: flex;align-items: center;
+            .Icon{width: 90px;height: 90px;display: block;text-align: center;line-height: 90px;}
+            .Inp{flex: 2;font-size: 32px;}
+        }
+        .code{width: 90%;margin: 0 auto;border-bottom: 1px solid #f4f5f6;height: 90px;display: flex;align-items: center;
+            .Icon{width: 90px;height: 90px;display: block;text-align: center;line-height: 90px;}
+            .Inp{flex: 2;font-size: 32px;}
+            .getcode{width: 200px;font-size: 32px;color: #757575;border-left: 1px solid #ebebeb;padding-left: 20px;text-align: center;}
+        }
+    }
+    .save,.save2{background-color: #fbc504;color: white;margin:30px auto ;width: 90%;height: 80px;line-height: 80px;text-align: center;border-radius: 5px;}
+
+}
+
+

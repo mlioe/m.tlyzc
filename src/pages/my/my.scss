@@ -1,0 +1,37 @@
+// @import "~taro-ui/dist/style/components/fab.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+page{background-color: #f4f5f6;}
+button::after{border: none;}
+.myBox{
+    .header{width: 100%;background-color: #333a45;display: flex;align-items: center;
+        .headerImg{width:120px ;height: 120px;border-radius: 50%;background-color: #eee;margin: 30px;
+            .img{width: 100%;height: 100%;border-radius: 50%;}
+        }
+        .headerLogin{color: white;}
+        .headerName{color:white;}
+    }
+    // .otherBox{width: 100%;
+    //     .otherList{width: 100%;height:100px;display: flex;align-items: center;box-sizing:border-box;padding:20px;background:white;border-bottom: #f4f5f6 1px solid;
+    //         .Icon{display: block;width: 50px;height: 100px;line-height: 100px;text-align: center;}
+    //         .otherText{font-size: 32px;padding: 0 20px;}
+    //     }
+    //     .contactButton{width: 100%;height:100px;background: rgba(0,0,0,0);display: block;padding:0;
+    //         .otherList{width: 100%;height:100px;display: flex;align-items: center;box-sizing:border-box;padding:20px;background:white;border-bottom: #f4f5f6 1px solid;
+    //             .Icon{display: block;width: 50px;height: 100px;line-height: 100px;text-align: center;}
+    //             .otherText{font-size: 32px;padding: 0 20px;color: black;}
+    //         }
+    //     }
+    // }
+    .list{width: 100%;display: flex;align-items: center;flex-wrap: wrap;margin-top:30px;
+        .listBox{width: 250px;border-right:1px solid #f4f5f6 ;border-bottom: 1px solid #f4f5f6;box-sizing: border-box;flex-direction: column;text-align: center;height:220px;background: rgba(255,255,255,1);
+            .img{width: 100px;height: 100px;margin: 20px 75px 0 75px;transform: scale(0.8);}
+            .text{color: #908f90;font-size: 32px;margin: 20px 0;}
+        }
+        .buttons{padding: 0 !important;margin:0 !important;flex-wrap:wrap;flex-direction: column;
+            .buttonImg{width: 100px;height: 100px;margin: 20px 75px 0 75px;}
+            .text{margin: -20px !important;}
+        }
+    }
+    .quit{padding: 30px;font-size: 32px;text-align: center;background:white;border-bottom: #f4f5f6 1px solid;margin-top: 30px;box-sizing: border-box;}
+}

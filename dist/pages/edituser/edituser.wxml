@@ -1,0 +1,38 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="list" bindtap="onClickImg" data-e-tap-so="this">
+            <view class="listLeft">头像</view>
+            <view class="listRightImg">
+                <image src="{{imgUrl}}" class="img"></image>
+                <at-icon compid="{{$compid__6}}"></at-icon>
+            </view>
+        </view>
+        <view class="list">
+            <view class="listLeft">用户名</view>
+            <view class="listRight">
+                <at-icon compid="{{$compid__7}}"></at-icon>
+                <input type="text" class="inp" maxlength="{{9}}" value="{{nickname}}" placeholder="请填写用户名" bindinput="onInput" data-e-input-so="this" />
+            </view>
+        </view>
+        <picker mode="selector" range="{{selector}}" bindchange="onChange" value="{{sex}}">
+            <view class="list">
+                <view class="listLeft">性别</view>
+                <view class="listRight">
+                    <at-icon compid="{{$compid__8}}"></at-icon>
+                    <view class="text">{{sex === null ? ' 请选择性别' : sex === 0 ? '男' : '女'}}</view>
+                </view>
+            </view>
+        </picker>
+        <picker mode="date" bindchange="onDateChange" value="{{dateSel}}">
+            <view class="list">
+                <view class="listLeft">生日</view>
+                <view class="listRight">
+                    <at-icon compid="{{$compid__9}}"></at-icon>
+                    <view class="text">{{birthday === null ? ' 请选择出生日期 ' : birthday}}</view>
+                </view>
+            </view>
+        </picker>
+        <view class="save" bindtap="save" data-e-tap-so="this">保存</view>
+        <view class="f">{{str}}</view>
+    </view>
+</block>

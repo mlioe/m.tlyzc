@@ -1,0 +1,27 @@
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+button::after{
+    border: none !important;
+    // opacity: 0 !important;
+}
+
+.getcodeBox{height: 100vh;overflow: hidden;width: 100%;
+    .header{font-size: 60px;padding-left: 70px;font-weight: 300;padding-top: 70px;}
+    .tips{width: 610px;margin: 0 auto;font-size: 32px;padding-top: 20px;}
+    .inpbox{width: 610px;margin: 80px auto;height: 100px;display: flex;align-items: center;justify-content: space-between;background: cccccd;position: relative;
+        .Inp{width: 610px;height: 100px;text-align: center;box-sizing: border-box;position: absolute;top: 0;left:0px;opacity: 0;z-index: 1;}
+        .codeInputBox{width: 610px;height: 100px;z-index: 9;position: absolute;top: 0;left: 0;justify-content: space-between;display: flex;
+            .codes{width: 80px;height: 80px;border-bottom: 3px solid #cccccd;box-sizing: border-box;text-align: center;line-height: 80px;
+                border-left:1px solid white ;border-right:1px solid white ;border-right:1px solid white ;
+            }
+            .codesActiver{ animation: dh 1s ;  animation-iteration-count: infinite;}
+        }
+    }
+    @keyframes dh {
+        0%{border: 3px solid #cccccd;}
+        100%{border: 3px solid black;}
+    }
+    .codenum{width: 610px;margin: 0 auto;font-size: 32px;}
+    // .buttons{background-color: #fbc504;color: white;width: 90%;height: 80px;line-height: 80px;text-align: center;border-radius: 5px;position: fixed;bottom: 30px;left:37.5px;font-size: 36px;border: none !important;}
+}

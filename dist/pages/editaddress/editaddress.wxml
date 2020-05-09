@@ -1,0 +1,41 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="listBox">
+            <view class="listTitle">默认地址:</view>
+            <radio-group bindchange="defaultRadio" data-e-change-so="this">
+                <label wx:key="i" wx:for="{{defaults}}" wx:for-item="item" wx:for-index="i">
+                    <radio style="transform: scale(0.8) !important" class="listTitleRadio" color="#fbc504" value="{{item.value}}" checked="{{item.checked}}">{{item.text}}</radio>
+                </label>
+            </radio-group>
+        </view>
+        <view class="listBox">
+            <view class="listTitle">联系人:</view>
+            <input type="text" class="listInp" value="{{name}}" placeholder="请输入收货人姓名" bindinput="names" data-e-input-so="this" />
+        </view>
+        <view class="listBox">
+            <view class="listTitle">性别:</view>
+            <radio-group bindchange="radio" data-e-change-so="this">
+                <label wx:key="i" wx:for="{{list}}" wx:for-item="item" wx:for-index="i">
+                    <radio style="transform: scale(0.8) !important" class="listTitleRadio" color="#fbc504" value="{{item.value}}" checked="{{item.checked}}">{{item.text}}</radio>
+                </label>
+            </radio-group>
+        </view>
+        <view class="listBox">
+            <view class="listTitle">手机号:</view>
+            <input type="number" class="listInp" placeholder="手机号" value="{{phone}}" bindinput="phone" data-e-input-so="this" />
+        </view>
+        <view class="listBox">
+            <view class="listTitle">收货地址:</view>
+            <view class="listSelect" bindtap="selectAddressMask" data-e-tap-so="this">
+                <view style="flex:1;overflow: hidden;">{{address.title == '' ? '请选择' : address.title}}</view>
+                <at-icon compid="{{$compid__18}}"></at-icon>
+            </view>
+        </view>
+        <view class="listBox">
+            <view class="listTitle">门牌号:</view>
+            <input type="text" class="listInp" value="{{numberPlate}}" placeholder="详细地址，例：16号楼1层1室" bindinput="plate" data-e-input-so="this" />
+        </view>
+        <view class="save" bindtap="save" data-e-tap-so="this">保存收货地址</view>
+        <view class="deletes" bindtap="deletes" data-e-tap-so="this">删除地址</view>
+    </view>
+</block>

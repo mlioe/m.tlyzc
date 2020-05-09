@@ -1,0 +1,40 @@
+
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+
+.box{background-color: #f4f5f6;height: 100vh;overflow: auto;
+    .header{background: white;width: 95%;margin: 20px 2.5% 20px 2.5%;overflow: hidden;border-radius: 10px;
+        .headerTop{width: 90%;margin: 0 auto;font-size: 32px;padding: 20px 0px;}
+        .headerCenter{width: 90%;margin: 0 auto 20px auto; border-bottom: 1px dashed #eeeeee;
+            .headerInp{padding: 10px;background-color:#fbc504 ;display: inline-block;font-size: 32px;color: white;border-radius: 5px;margin-bottom: 20px;}
+        }
+        .headerBottom{width: 90%;margin: 0 auto 20px auto;font-size: 32px;
+            display: flex;align-items: center;justify-content: center;
+            .headerPhoneBox{width: 45px;height: 45px;
+                .Icon{display: block;width: 45px;height: 45px;text-align: center;line-height: 45px;border-radius: 50%;box-sizing: border-box;}
+            }
+            .headerText{padding-left: 20px;}
+        }
+    }
+    .content{background: white;width: 95%;margin: 20px 2.5% 20px 2.5%;border-radius: 10px;
+        .contentName{padding: 30px;display: flex;align-items: center;justify-content: space-between;}
+        .tabList{width: 98%;justify-content: space-between;display: flex;align-items: center;box-sizing:border-box;margin:5px 1% 10px 1%;
+            .tabListImgbox{width: 152px;height: 114px;background-color: #eeeeee;margin: 20px;}
+            .tabListRight{flex: 2;min-height: 30px;flex-direction: column;margin-right: 10px;
+                .listTitle{font-size: 32px;color: #333;font-weight: 600;letter-spacing: 0.02rem;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;display: flex;align-items: center;justify-content: space-between;
+                    .listTitleMoney{color: red;}
+                }
+                .listText{font-size: 24px;overflow: hidden;white-space: nowrap;width: 400px;text-overflow:ellipsis;}
+                
+            }
+        }
+    }
+    .other{background: white;width: 95%;margin: 20px 2.5% 20px 2.5%;border-radius: 10px;
+        .otherTitle{padding: 30px;display: flex;align-items: center;justify-content: space-between;}
+        .otherList{width: 100%;margin: 0 auto;display: flex;padding-left:30px; border-bottom: 1px dashed #eeeeee;box-sizing: border-box;font-size:32px;
+            .otherListTitle{padding: 20px 20px 20px 0;box-sizing: border-box;}
+            .otherListText{flex: 2;padding: 20px 10px 20px 0;box-sizing: border-box;}
+        }
+    }
+}

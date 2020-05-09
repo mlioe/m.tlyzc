@@ -1,0 +1,35 @@
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+.box{
+    .listBox{width: 100%;border-bottom: 1px solid #f4f5f6;display: flex;align-items: center;
+        .listTitle{font-size: 32px;padding: 30px;width: 20%;}
+        .listInp{flex: 2;margin-right: 30px;font-size: 32px;}
+        .listTitleRadio{font-size: 36px;padding-right: 30px !important;}
+        .listSelect{color: #757575;font-size: 32px;flex: 2;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;display: flex;align-items: center;justify-content: space-between;
+            .Icon{padding-right: 35px;display: block;}
+        }
+    }
+    .save{background-color: #fbc504;color: white;margin:30px auto ;width: 90%;height: 80px;line-height: 80px;text-align: center;border-radius: 5px;font-size: 32px;}
+
+    .mask{width: 100%;height: 100vh;background-color: rgba($color: #000000, $alpha: 0.8);position: fixed;top: 0;z-index: 15;}
+
+    .selectBox{width: 100%;position: fixed;top: 0;left: 0;background-color: white;z-index: 20;
+        .selectBoxTop{width: 100%;height: 90px;display: flex;align-items: center;overflow: hidden;
+            .Icon{width: 50px;height:90px;line-height: 90px;text-align: center;margin: 0 15px;display: block;}
+            .selectBoxCity{height:90px;line-height: 90px;font-size: 36px;}
+            .selectBoxInp{flex: 2;height: 60px;margin-top: 5px;background-color: #f0f1f2;margin-left: 20px;margin-right: 20px;border-radius: 5px;
+                .Inp{font-size: 32px;box-sizing: border-box;height: 60px;padding:0 20px;box-sizing: border-box;}
+            }
+        }
+        .selectBoxList{max-height: 40vh;background-color: white;overflow: auto;
+            .list{width: 100%;height: 110px;box-sizing: border-box;border-bottom: 1px solid #f4f5f6;
+                .listTitle{width: 96%;height: 60px;line-height: 60px;margin-left: 2%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 35px;}
+                .listAddress{width: 96%;font-size: 32px;height: 50px;margin-left:2% ;line-height: 50px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+            }
+            .list:nth-of-type(1){border-top: 1px solid #f4f5f6;}
+        }
+        .selectBoxDown{width: 100%;height: 70px;background-color: white;display: flex;justify-content: space-between;
+            .downText{float: right;font-size: 28px;line-height: 70px;padding-right: 35px;color: #757575;}
+        }
+    }
+}

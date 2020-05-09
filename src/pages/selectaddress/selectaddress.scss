@@ -1,0 +1,48 @@
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+button::after{
+    border: none !important;
+    // opacity: 0 !important;
+} 
+
+.box{
+   .header{width: 100%;height: 90px;display: flex;align-items: center;z-index:20;display: flex;
+        .headerAddress{display: flex;align-items: center;height: 90px;line-height: 90px;font-size:32px;
+            .Icon{width: 90px;height: 90px;display: block;text-align: center;line-height: 90px;}
+        }
+        .inputBox{flex: 2;height: 90px;
+            .Inp{width: 95%;height: 71px;background-color: #f0f1f2;margin: 9.5px auto;border-radius: 5px;box-sizing: border-box;font-size: 32px;line-height: 32px;padding-left: 20px;line-height: 71px;color: #d5d6d7;}
+        }
+    }
+    .searcHeader{width: 100%;height: 90px;display: flex;align-items: center;z-index:20;display: flex;
+        .headerAddress{display: flex;align-items: center;height: 90px;line-height: 90px;font-size:32px;
+            .Icon{width: 90px;height: 90px;display: block;text-align: center;line-height: 90px;}
+        }
+        .inputBox{flex: 2;height: 90px;
+            .Inp{width: 95%;height: 71px;background-color: #f0f1f2;margin: 9.5px auto;border-radius: 5px;box-sizing: border-box;font-size: 32px;line-height: 32px;padding-left: 20px;line-height: 71px;}
+        }
+        .down{font-size: 32px;padding:0 20px;}
+    }
+    .mapBox{width: 100%;height: 450px;
+        .map{width: 100%;height: 450px;}
+    }
+    .addressListBox{width: 100%;position: fixed;top: 540px;bottom: 0;left: 0;overflow: auto;
+        .list{width: 100%;box-sizing: border-box;border-bottom: 1px solid #f4f5f6;display: flex;
+            .activeBg{background-color: #fbc504;}
+            .activeColor{color: #fbc504;}
+            .listLeft{width: 20px;height: 20px;border-radius: 50%;margin: 30px;}
+            .listright{flex: 2;
+                .listTitle{width: 96%;height: 60px;line-height: 60px;margin-left: 2%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 32px;padding: 10px 0;}
+                .listAddress{width: 96%;font-size: 28px;height: 50px;margin-left:2% ;line-height: 50px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+            }
+        }
+    }
+    .mask{width: 100%;height: 100vh;position: fixed;background-color: rgba($color: #000000, $alpha:0.8);}
+    .selectList{width: 100%;background-color: white;position: fixed;z-index: 19;top: 91px;bottom: 0;left: 0;overflow:auto;
+        .list{width: 100%;box-sizing: border-box;border-bottom: 1px solid #f4f5f6;
+            .listTitle{width: 96%;height: 60px;line-height: 60px;margin-left: 2%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 32px;padding: 10px 0;}
+            .listAddress{width: 96%;font-size: 28px;height: 50px;margin-left:2% ;line-height: 50px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+        }
+    }
+}

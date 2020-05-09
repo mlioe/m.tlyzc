@@ -1,0 +1,33 @@
+
+
+.box{
+    .headerBox{width: 100%;height: 90px;display:flex;
+      .sw{width: 33.33%;height: 90px;box-sizing: border-box;text-align: center;line-height: 90px;
+          .swText{font-size: 34px;display: inline-block;font-size: 32px;}
+          .active{border-bottom: 1px solid #fbc504;color: #fbc504;display: inline-block;}
+      }
+    }
+    .swiperBox{width:100% !important;position:fixed;top:90px;left:0;bottom:0px;background-color: #f4f5f6;
+      .swiperbox{height: 100%;
+         .swiperItems{width: 100%;overflow: auto;
+                .swiperList{width: 95%;background-color: white;display: flex;flex-direction: column;margin-left:2.5%;margin-top:20px;border-radius: 10px;
+                  .listTop{width: 95%;display: flex;align-items: center;border-bottom: 1px solid #f4f5f6;margin:  0 auto;
+                      .listTopImg{width: 80px;height: 80px;background: #f4f5f6;margin:20px 20px 20px 0;}
+                      .listTopText{flex: 1;font-size: 32px;color: #323232;}
+                  }
+                .listCenter{width: 95%;margin: 0 auto;display: flex;flex-direction: column;
+                    .listContent{display: flex;align-items: center;justify-content: space-between;font-size: 32px;
+                        .listContentText,.listContentNum{padding: 20px 0;}
+                    }
+                    .listOther{display: flex;align-items: center;justify-content: space-between;font-size: 32px;
+                        .listOtherTime,.listOtherMoney{padding: 20px 0;}
+                    }
+                }
+                .listBottom{width: 95%;margin: 0 auto;display: flex;flex-direction: row-reverse;
+                  .buttons{font-size: 28px;border: 1px solid #e2e2e2;padding: 10px;margin: 20px;}
+                }
+              }
+          }
+      }
+    }
+  }

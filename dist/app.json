@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/shopdetails/shopdetails",
+    "pages/my/my",
+    "pages/edituser/edituser",
+    "pages/suborder/suborder",
+    "pages/addresslist/addresslist",
+    "pages/addaddress/addaddress",
+    "pages/selectaddress/selectaddress",
+    "pages/editaddress/editaddress",
+    "pages/order/order",
+    "pages/getcode/getcode",
+    "pages/login/login",
+    "pages/orderdetails/orderdetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/shopdetails/shopdetails",
+        "text": "首页",
+        "iconPath": "./img/home.png",
+        "selectedIconPath": "./img/home_select.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "./img/order.png",
+        "selectedIconPath": "./img/order_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./img/my.png",
+        "selectedIconPath": "./img/my_select.png"
+      }
+    ],
+    "color": "#333",
+    "selectedColor": "#fbc504",
+    "backgroundColor": "#fff",
+    "borderStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为不影响您的收货，请允许小程序获取你的地址定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

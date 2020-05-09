@@ -1,0 +1,14 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="list" wx:key="label" wx:for="{{addressList}}" wx:for-item="item" wx:for-index="_anonIdx2">
+            <view class="listLeft">
+                <view class="listTitle">{{item.label}}<text class="text">{{item.is_default === 1 ? '默认' : ''}}</text>
+                </view>
+                <view class="listOther">{{item.name}} {{item.sex === 1 ? '先生' : '女士'}} {{item.mobile}}</view>
+            </view>
+            <view class="iconBox" catchtap="editAddress" data-e-tap-so="this" data-e-tap-a-a="{{item}}">编辑</view>
+        </view>
+        <view class="seat" style="height:55px"></view>
+        <view class="newAddress" bindtap="addAress">新增收货地址</view>
+    </view>
+</block>

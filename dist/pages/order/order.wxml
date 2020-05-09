@@ -1,0 +1,39 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="box">
+        <view class="headerBox">
+            <view class="sw"><text class="{{currentIndex == 0 ? 'swText active' : 'swText'}}" bindtap="anonymousFunc0">全部订单</text>
+            </view>
+            <view class="sw"><text class="{{currentIndex == 1 ? 'swText active' : 'swText'}}" bindtap="anonymousFunc1">待支付</text>
+            </view>
+            <view class="sw"><text class="{{currentIndex == 2 ? 'swText active' : 'swText'}}" bindtap="anonymousFunc2">待评价</text>
+            </view>
+        </view>
+        <view class="swiperBox">
+            <swiper class="swiperbox" indicator-color="#999" indicator-active-color="#333" vertical="{{false}}" circular="{{false}}" indicator-dots="{{false}}" autoplay="{{false}}" current="{{currentIndex}}" bindchange="onChanges">
+                <swiper-item class="swiperItems">
+                    <view class="swiperList" bindtap="goOrderDetails" data-e-tap-so="this">
+                        <view class="listTop">
+                            <view class="listTopImg"></view>
+                            <view class="listTopText">绿华炸鸡汉堡</view>
+                        </view>
+                        <view class="listCenter">
+                            <view class="listContent">
+                                <view class="listContentText">汉堡+鸡腿</view>
+                                <view class="listContentNum">x1</view>
+                            </view>
+                            <view class="listOther">
+                                <view class="listOtherTime">2019-11-03 20:39</view>
+                                <view class="listOtherMoney">实付￥24.5</view>
+                            </view>
+                        </view>
+                        <view class="listBottom">
+                            <view class="buttons">再来一单</view>
+                        </view>
+                    </view>
+                </swiper-item>
+                <swiper-item class="swiperItems">2</swiper-item>
+                <swiper-item class="swiperItems">3</swiper-item>
+            </swiper>
+        </view>
+    </view>
+</block>

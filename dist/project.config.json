@@ -1,0 +1,16 @@
+{
+	"projectname": "m.tlyzc.com",
+	"description": "腾龙黄粤家月子餐的移动端前端项目",
+	"appid": "wx9fc609190fd71451",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.9.2",
+	"condition": {}
+}
