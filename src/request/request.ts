@@ -12,15 +12,7 @@ export let yzcUrl = 'http://192.168.31.238:8100/' //月子餐注册用户的接�
 
 
 export let header = {
-    token: 'telo-token-data', // 加密后token的请求头部
-    encrypt: 'telo-data-encrypt', // 返回的数据是否加密的头部
-    timestamp: 'telo-time-param', // 返回的时间戳的头部
-    systemInfo: 'telo-system-data', // 返回JSON序列化的值
-    encryptionKey: 'telo-origin', // 用来加密/解密来源数据的key
-    encryptionKey2: 'telo-auth', //  用来加密/解密认证数据的key
-    ORIGIN_DATA: 'telo-origin-data', // 注册来源数据
-    AUTH_DATA: 'telo-auth-data', // 注册认证数据
-    HEADER_TOKEN: 'telo_header_token', // 用来解密传输token头部的key
+    //加密串的key，防止泄露公司信息泄露我自己删了
 }
 export let datas = { 'name': 'yzc' } //月子餐小程序的key
 
